@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import Tone from 'tone';
+import Dashboard from './Dashboard';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <Dashboard />,
   document.getElementById('root')
 );
 

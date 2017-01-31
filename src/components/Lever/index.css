@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil');
+
+.lever__wrapper {
+  margin: 0.5em;
+  padding: 1em;
+  background: #e6ded5;
+  box-shadow: inset 4px 5px 0px #fff8f3, inset -3px -9px 0px #a7a09a;
+  border-radius: 9px;
+  align-self: flex-start;
+}
+
+.lever__label {
+  margin: 1em 0 0.5em 0;
+  text-align: center;
+  display: block;
+  color: #333;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+  font-family: 'Stardos Stencil', cursive;
+  font-size: 12px;
+}
+
+.lever {
+  width: 30px;
+  height: 130px;
+  margin: auto;
+}
+
+.lever__input {
+  height: 30px;
+  width: 130px;
+  -webkit-appearance: none;
+  background: transparent;
+  transform: rotate(-90deg);
+  transform-origin: 63px 65px;
+}
+
+.lever__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.lever__input:focus {
+  outline: none;
+}
+
+.lever__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 3px solid #b93123;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background: linear-gradient(-90deg, #f15e4e, #EF4236, #b93123);
+  cursor: pointer;
+  margin-top: -10px;
+  box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.lever__input::-webkit-slider-runnable-track {
+  height: 15px;
+  cursor: pointer;
+  box-shadow: inset 2px -2px 1px rgba(0, 0, 0, 0.3),
+    inset -2px 2px 1px rgba(255, 255, 255, 0.13);
+  background: #555;
+  border-radius: 8px;
+  border: 3px solid #2a2a2a;
+}

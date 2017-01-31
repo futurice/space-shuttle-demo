@@ -1,0 +1,10 @@
+.dashboard {
+  height: 100%;
+  background: #333  ;
+  display: flex;
+  flex-direction: column;
+}
+
+.levers {
+  display: flex;
+}

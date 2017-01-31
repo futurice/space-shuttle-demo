@@ -1,0 +1,30 @@
+
+.gauge__pointer__wrapper, .gauge__pointer {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+.gauge__pointer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.gauge__pointer svg {
+  position: absolute;
+  left: 25px;
+  top: 80px;
+  stroke-width: 3px;
+  transform-origin: 50px 50px;
+  transition: transform 400ms;
+}
+
+.gauge__pointer polygon {
+  fill: #39ab40;
+}
+
+.gauge__pointer circle {
+  fill: #4adc53;
+  stroke: #1d9023;
+}
+

@@ -1,0 +1,22 @@
+.button {
+  width: 180px;
+  height: 180px;
+  border: 0;
+  margin: 0.5rem;
+  border-radius: 100%;
+  font-size: 40px;
+  background: radial-gradient(at 34% 31% , #f05546 0%, #c03325 61%);
+  border: 5px solid #b93123;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  outline: 0;
+  cursor: pointer;
+  color: #92261b;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.button:active {
+  background: radial-gradient(at 34% 31% , #d24b3d 0%, #9c291e 61%);
+  border: 5px solid #862419;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
