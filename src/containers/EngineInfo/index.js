@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Lever from '../../components/Lever';
-import LiquidGauge from '../../components/LiquidGauge';
+import Gauge from '../../components/Gauge';
 
 import { speed$, fuel$, setThrottle } from '../../modules/engine';
 
@@ -19,7 +19,7 @@ class EngineInfo extends Component {
   render() {
     return (
       <div>
-        <LiquidGauge label="Fuel" value={this.state.fuel} />
+        <Gauge label="Speed" value={this.state.speed} />
         <Lever onChange={this.setThrottle} label="Throttle"></Lever>
       </div>
     );
