@@ -11,7 +11,7 @@ class TweetBox extends Component {
   componentDidMount = async () => {
     const tweets = await getTweets();
 
-    fetch('https://www.reddit.com/r/Suomi.json').then((res) => res.json())
+    fetch('https://www.reddit.com/r/worldnews.json').then((res) => res.json())
       .then((response) => {
         this.setState({
           redditThreads: response.data.children.map(({data: {title, author, id}}) => ({title, author, id}))
@@ -23,12 +23,11 @@ class TweetBox extends Component {
   render() {
     return (
       <Monitor className="tweet-box">
-        <h3>Recent tweets from Spacebook</h3>
+        <h3>News from planet earth</h3>
         {
           this.state.redditThreads.map((tweet) => {
             return (
               <div className="tweet-box__tweet" key={tweet.id}>
-                <strong>{tweet.author}</strong><br />
                 {tweet.title}<br />
                 ---------------------------
               </div>
