@@ -6,7 +6,7 @@
 
 ```
 git clone git@github.com:futurice/space-shuttle-demo.git
-cd space-shuttle
+cd space-shuttle-demo
 npm install
 npm start
 open http://localhost:3000
